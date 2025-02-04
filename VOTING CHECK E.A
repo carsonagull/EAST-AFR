@@ -1,0 +1,11 @@
+def check_voter_eligibility():
+    east_african_countries= {"kenya", "uganda", "tanzania"}  # Fixed variable naming
+    
+    citizenship= input("Enter your country of citizenship (Kenya, Uganda, Tanzania): ").strip().lower()
+    age = int(input("Enter your age here: ").strip())
+    if citizenship in east_african_countries and age >= 18:
+        print("You are eligible to vote. PROCEED")
+    else:
+        print("You are not eligible to vote. PLEASE GO HOME")
+
+check_voter_eligibility()
